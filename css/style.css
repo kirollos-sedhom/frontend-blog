@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'source-sans';
+    src: url('/fonts/SourceSansPro-Regular.otf') format('opentype');
+    /* Add additional src lines for other font formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'source-sans';
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0px;
+    font-size: 0.75rem;
+    /* color: red; */
+}
+.home-about{
+    display: flex;
+    gap:1em;
+}
+.logo{
+    color: #090909;
+    display: flex;
+    align-items: center;
+    gap:0.3em;
+       
+    /* padding: 0.5em; */
+    /* margin: 0px; */
+}
+.logo-icon{
+    font-size: 2rem;
+    /* margin: 0px;    */
+}
+.logo-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px;
+    /* font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+}
+.header-link{
+    text-transform:uppercase;
+    color: #090909;
+    /* font-family: sans-serif; */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.featured{
+    /* background-color:blueviolet; */
+    background-image: url("../images/featured.png");
+
+    background-size: cover;
+    color: white;
+    padding: 5rem 1rem 1rem 1rem;
+    /* text-shadow: 2px 2px black; */
+}
+.featured p{
+        text-shadow: 2px 2px 70px black;
+        max-width: 70vh;
+}
+.featured-date{
+    font-size: 0.85rem;
+    margin-bottom: 0px;
+    font-weight: 100;
+}
+.featured-title{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+
+    /* color: red; */
+    text-shadow: 2px 2px 40px black;
+}
+.featured-title a{
+    text-decoration: none;
+    color: white;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.25rem 0 1.25rem;
+    box-sizing: border-box;
+
+}
+
+.blog-img{
+    border-radius: 5px;
+}
+
+.blog-date{
+    margin: 1rem 0 0 0;
+    /* border: 1px solid blue; */
+}
+.blog-title{
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.blog-content{
+    margin-top: 0rem;
+    color: #505050;
+}
+
+.view-more{
+    font-size: 1rem;
+    font-weight: bold;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* align-self: center; */
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 4rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #202020;
+    padding: 1.5em;
+    color: white;
+}
+footer h4{
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+footer p{
+    color: #D7D7D7;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+/* selected post */
+.main-post{
+    padding: 1.5rem;
+
+
+}
+.main-post img {
+    max-width: 100%;
+    margin: 0 auto; /* shorthand for setting top/bottom margin to 0 and left/right margin to auto */
+    display: block; 
+    border-radius: 5px;
+}
+
+.bold{
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.no-underline{
+    /* align-self: center; */
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+
+/* profile */
+.profile-intro{
+    padding: 2rem;
+}
+
+.profile-pic {
+    display: block;
+    align-self:center;
+    width: 40vw;
+    height: 40vw;
+    /* height: 150px; */
+    border-radius: 50%; /* Make the container circular */
+    
+}
+
+
+
+@media (min-width: 500px) {
+
+
+    #blogs-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px; /* Adjust gap between columns */    
+    }
+    .main-post{
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+    .main-post-text{
+        max-width: 70vw;
+        margin: 0 auto; 
+        display: block; 
+        border-radius: 5px;
+    }
+    .profile-pic{
+        max-width: 125px;
+        max-height: 125px;
+    }
+    .greeting{
+        width: 100%;
+        display: flex;
+        font-size: 0.8rem;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .profile-text{
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
